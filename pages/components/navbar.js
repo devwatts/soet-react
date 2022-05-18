@@ -2,9 +2,9 @@ import react from "react";
 import Image from "next/image";
 import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
-        <div className="flex w-100 justify-between z-50 p-3">
+        <div className={props.transparent? 'flex w-[100%] justify-between absolute z-50 p-3' : 'flex w-[100%] justify-between z-50 p-3'}>
             <div className="flex">
                 <div>
                     <Image src="/static/images/logo.png" width={"80px"} height={"80px"}/>
