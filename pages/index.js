@@ -60,7 +60,7 @@ export default function Home() {
                  <ImageGallery showPlayButton={false} showFullscreenButton={false} showNav={false} infinite={true} showBullets={true} items={images} />
               </div>
           </div>
-          <div className='flex w-[100%] h-[400px] justify-around mt-[50px] mb-[50px]'>
+          <div className='flex w-[100%] h-[450px] justify-around mt-[50px] mb-[50px]'>
                   <BigCard title={"Announcements"} width={'40%'} height={'100%'}></BigCard>
                   <BigCard title={"Achievements"} width={'40%'} height={'100%'}></BigCard>
           </div>
