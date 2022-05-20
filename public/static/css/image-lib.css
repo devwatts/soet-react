@@ -1,3 +1,7 @@
+.image-gallery{
+    display: flex;
+    justify-content: center;
+}
 .image-gallery-image{
     height: auto !important;
     max-height: 350px !important;

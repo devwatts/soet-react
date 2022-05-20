@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from './components/navbar';
-import BigCard from './components/bigCard';
+import HalfCard from './components/halfCard';
+import FullCard from './components/fullCard';
 import ImageGallery from 'react-image-gallery';
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";
@@ -38,11 +39,11 @@ export default function Home() {
       
       <div className='main-wrapper'>
           <Navbar transparent={true}></Navbar>
-          <div className='top-0 z-[-10] w-[100%] min-h-[100vh] flex p-[100px] flex-col justify-center'>
+          <div className='top-0 z-[-10] w-[100%] min-h-[100vh] flex p-[20px] flex-col justify-center md:p-[100px]'>
               <video className='object-cover opacity-[0.8] absolute top-[-50px] z-[-2] left-[0] w-[100%] h-[100%]' autoPlay={true} muted loop src='/static/videos/vid-HD.mp4'/>
               <div className='absolute left-[0] top-[0] w-[100%] h-[100%] bg-[#3e3e3e] z-[-1] mix-blend-overlay	'></div>
-              <div className='absolute w-[40%] flex flex-col justify-start items-start'>
-                  <span className='text-white text-[1.5em] w-[80%] mb-[10px]'>
+              <div className='absolute w-[80%] md:w-[40%] flex flex-col justify-start items-start'>
+                  <span className='text-white text-[18px] w-[80%] mb-[10px] lg:text-[1.5em]'>
                         SOET is founded to bring outstanding academicians and industry professionals under one roof to create a world-class teaching hub for aspiring engineers around the globe.
                   </span>
                   <button className='bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] hover:tracking-[1px]'>EXPLORE PROGRAMS</button>
@@ -51,18 +52,21 @@ export default function Home() {
           <div className='bg-[#ed3237] h-[80px] mt-[-50px] z-50 w-[100%]'>
                 <span className='text-white text-[1.5em] font-bold bg-[#006cb5] h-[90px] block p-[20px]	left-[100px] w-fit mt-[-10px] absolute leading-[50px]'>HIGHLIGHTS</span>
           </div>
-          <div className='flex justify-around mt-[50px] mb-[50px] items-center'>
-              <div className='w-[40%] flex flex-col'>
+          <div className='flex md:flex-row flex-col-reverse md:justify-around justify-center mt-[50px] mb-[10px] items-center'>
+              <div className='md:w-[40%] w-[90%] flex flex-col'>
                 <span className='text-[26px] text-[#006cb5] font-bold text-'>Achieve the ultimate career growth with us</span>
                 <span className='text-[18px]'>Founded in 2013, K.R. Mangalam University is establishing itself as an innovative and unique educational institution and is counted amongst the premier engineering colleges in Delhi NCR, offering Engineering and Technology courses. SOET is founded to bring outstanding academicians and industry professionals under one roof to create a world-class teaching hub for aspiring engineers around the globe.</span>
               </div>
-              <div className='w-[40%]'>
+              <div className='md:w-[40%] mb-[40px] md:mb-[0px] w-[90%]'>
                  <ImageGallery showPlayButton={false} showFullscreenButton={false} showNav={false} infinite={true} showBullets={true} items={images} />
               </div>
           </div>
-          <div className='flex w-[100%] h-[450px] justify-around mt-[50px] mb-[50px]'>
-                  <BigCard title={"Announcements"} width={'40%'} height={'100%'}></BigCard>
-                  <BigCard title={"Achievements"} width={'40%'} height={'100%'}></BigCard>
+          <div className='flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]'>
+                  <HalfCard title={"Announcements"}></HalfCard>
+                  <HalfCard title={"Achievements"}></HalfCard>
+          </div>
+          <div className='flex justify-around w-100'>
+              <FullCard width={'90%'}></FullCard>
           </div>
       </div>
       

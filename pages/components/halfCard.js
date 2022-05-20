@@ -1,9 +1,9 @@
 import Link from "next/link";
 import CardRow from "./cardRow";
 
-const BigCard = (props) => {
+const HalfCard = (props) => {
     return(
-        <div className={`bg-[#006cb5] w-[${props.width}] h-[${props.height}] rounded-[10px] p-[20px]`}>
+        <div className={`bg-[#006cb5] mt-[20px] w-[90%] h-[100%] justify-center rounded-[10px] p-[20px] lg:mt-[20px] lg:w-[40%]`}>
             <div className="flex justify-between">
                 <span className="text-white text-[20px] font-bold">
                     {props.title}
@@ -19,4 +19,4 @@ const BigCard = (props) => {
     );
 }
 
-export default BigCard;
+export default HalfCard;
