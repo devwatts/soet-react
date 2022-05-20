@@ -1,0 +1,7 @@
+.image-gallery-image{
+    height: auto !important;
+    max-height: 350px !important;
+    width: auto !important;
+    border-radius: 40px  !important;
+    max-width: 100%  !important;
+}
