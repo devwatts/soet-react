@@ -40,7 +40,7 @@ export default function Home() {
       <div className='main-wrapper'>
           <Navbar transparent={true}></Navbar>
           <div className='top-0 z-[-10] w-[100%] min-h-[100vh] flex p-[20px] flex-col justify-center md:p-[100px]'>
-              <video className='object-cover opacity-[0.8] absolute top-[-50px] z-[-2] left-[0] w-[100%] h-[100%]' autoPlay={true} muted loop src='/static/videos/vid-HD.mp4'/>
+              <video className='object-cover opacity-[0.8] absolute top-[-50px] z-[-2] left-[0] w-[100%] h-[100%]' autoPlay={true} playsInline muted loop src='/static/videos/vid-HD.mp4'/>
               <div className='absolute left-[0] top-[0] w-[100%] h-[100%] bg-[#3e3e3e] z-[-1] mix-blend-overlay	'></div>
               <div className='absolute w-[80%] md:w-[40%] flex flex-col justify-start items-start'>
                   <span className='text-white text-[18px] w-[80%] mb-[10px] lg:text-[1.5em]'>
