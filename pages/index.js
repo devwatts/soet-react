@@ -40,7 +40,7 @@ export default function Home() {
       <div className='main-wrapper'>
           <Navbar transparent={true}></Navbar>
           <div className='top-0 z-[-10] w-[100%] min-h-[100vh] flex p-[20px] flex-col justify-center md:p-[100px]'>
-              <video className='object-cover opacity-[0.8] absolute top-[-50px] z-[-2] left-[0] w-[100%] h-[100%]' autoPlay={true} playsInline muted loop src='/static/videos/vid-HD.mp4'/>
+              <video className='object-cover opacity-[0.8] top-[0px] absolute  z-[-2] left-[0] w-[100%] h-[100%] xl:top-[-50px]' autoPlay={true} playsInline muted loop src='/static/videos/vid-HD.mp4'/>
               <div className='absolute left-[0] top-[0] w-[100%] h-[100%] bg-[#3e3e3e] z-[-1] mix-blend-overlay	'></div>
               <div className='absolute w-[80%] md:w-[40%] flex flex-col justify-start items-start'>
                   <span className='text-white text-[18px] w-[80%] mb-[10px] lg:text-[1.5em]'>
@@ -49,8 +49,8 @@ export default function Home() {
                   <button className='bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] hover:tracking-[1px]'>EXPLORE PROGRAMS</button>
               </div>
           </div>
-          <div className='bg-[#ed3237] h-[80px] mt-[-50px] z-50 w-[100%]'>
-                <span className='text-white text-[1.5em] font-bold bg-[#006cb5] h-[90px] block p-[20px]	left-[100px] w-fit mt-[-10px] absolute leading-[50px]'>HIGHLIGHTS</span>
+          <div className='bg-[#ed3237] h-[80px] z-50 w-[100%]'>
+                <span className='ml-[40px] mt-[-110px] md:mt-[-80px] text-white text-[1.5em] font-bold bg-[#006cb5] h-[90px] block p-[20px]	left-[100px] w-fit leading-[50px]'>HIGHLIGHTS</span>
           </div>
           <div className='flex md:flex-row flex-col-reverse md:justify-around justify-center mt-[50px] mb-[10px] items-center'>
               <div className='md:w-[40%] w-[90%] flex flex-col'>
