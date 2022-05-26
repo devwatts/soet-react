@@ -85,9 +85,9 @@ export default function Home() {
                     <Link href={'#'}><a className='w-[100%] mt-[5px] text-[13px]'>Location: <br></br>Sohna Road, Gurugram,</a></Link>
                   </div>
               </div>
-              <div className='flex w-[90%] self-center justify-center flex-wrap text-[14px] border-t-[8px] border-[#ed3237] md:w-[45%]'>
-                <span className='mt-[30px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>SUBSCRIBE TO UPDATES</span>
-                    <div className='flex mt-[10px] mb-[30px] bg-[#fff] p-[20px]'>
+              <div className='flex flex-col w-[90%] self-center justify-center flex-wrap text-[14px] border-t-[8px] border-[#ed3237] md:w-[45%]'>
+                <span className='mt-[30px] mb-[10px] text-center text-[#91d8f7] font-bold text-[17px]'>SUBSCRIBE TO UPDATES</span>
+                    <div className='flex mt-[10px] mb-[30px] bg-[#fff] p-[20px] w-fit self-center	'>
                        <form action='/' class="w-full max-w-sm">
                             <div class="flex items-center border-b border-[#ed3237] py-2">
                               <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Email Address" aria-label="Full name"/>
