@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = (props) => {
     return (
-        <div className={props.transparent? 'flex w-[100%] justify-center lg:justify-between items-center absolute z-50 p-3' : 'flex w-[100%] justify-between z-50 p-3'}>
+        <div className={props.transparent? 'flex w-[100%] justify-center lg:justify-between items-center absolute z-50 p-3' : 'flex w-[100%] justify-center bg-[#006cb5] lg:justify-between items-center z-50 p-3'}>
             <div className="flex">
                 <div>
                     <Image src="/static/images/logo.png" width={"80px"} height={"80px"}/>

@@ -2,10 +2,13 @@
     display: flex;
     justify-content: center;
 }
-.image-gallery-image{
+.landing-highlight img{
     height: auto !important;
     max-height: 350px !important;
     width: auto !important;
     border-radius: 40px  !important;
     max-width: 100%  !important;
+}
+.event-front img{
+    border-radius: 10px !important;
 }
