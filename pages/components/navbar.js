@@ -16,7 +16,7 @@ const Navbar = (props) => {
             <div className="hidden lg:block flex flex-row justify-center items-center text-white h-100 text-[17px] font-medium">
                 <Link href="#"><a className="m-3 font-light hover:text-red-400">Announcements</a></Link>
                 <Link href="#"><a className="m-3 font-light hover:text-red-400">Faculty</a></Link>
-                <Link href="#"><a className="m-3 font-light hover:text-red-400">Events</a></Link>
+                <Link href="/events"><a className="m-3 font-light hover:text-red-400">Events</a></Link>
                 <Link href="#"><a className="m-3 font-light hover:text-red-400">Research</a></Link>
             </div>
         </div>
