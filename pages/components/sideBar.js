@@ -6,8 +6,8 @@ export default function SideBar(props){
     return(
         <div className={`fixed z-[100] bg-[white] right-[0px] w-${props.status?'[180px]':'0'} h-[100vh] transition-all`}>
             <div className='p-[30px]'>
-                <div onClick={() => {props.sideBarToggle(false)}} className='flex justify-end cursor-pointer'>
-                    <Image src={'/static/images/close-x.png'}  width={'30px'} height={'30px'}></Image>
+                <div className='flex justify-end'>
+                    <button onClick={() => {props.sideBarToggle(false)}}><Image src={'/static/images/close-x.png'}  width={'30px'} height={'30px'}></Image></button>
                 </div>
                 <div className='flex flex-col'>
                     <Link href={'#'}><a className='mt-[20px]'>Announcments</a></Link>
