@@ -8,8 +8,8 @@ const Navbar = (props) => {
                 <div>
                     <Image src="/static/images/logo.png" width={"80px"} height={"80px"}/>
                 </div>
-                <div className="flex text-white flex-col justify-center	text-center font-bold ml-2">
-                    <span className="text-3xl text-left lg:text-center">SOET</span>
+                <div className="flex text-white flex-col justify-center	text-center lg:text-center font-bold ml-2">
+                    <span className="text-3xl">SOET</span>
                     <span className="text-sm font-bold">SCHOOL OF ENGINEERING AND TECHNOLOGY</span>
                 </div>
             </div>
