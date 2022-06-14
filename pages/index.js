@@ -4,6 +4,8 @@ import HalfCard from './components/halfCard';
 import FullCard from './components/fullCard';
 import ImageGallery from 'react-image-gallery';
 import Footer from './components/footer';
+import SideBar from './components/sideBar';
+import { useState } from 'react';
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -28,6 +30,7 @@ const images = [
 ];
 
 export default function Home() {
+  const [sideBar,setSideBar] = useState(false);
   return (
     <div>
       <Head>
@@ -36,9 +39,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/static/css/image-lib.css" />
       </Head>
-      
+      <SideBar sideBarToggle={setSideBar} status={sideBar}></SideBar>
       <div className='main-wrapper'>
-          <Navbar transparent={true}></Navbar>
+          <Navbar sideBarToggle={setSideBar} transparent={true}></Navbar>
           <div className='top-0 z-[-10] w-[100%] min-h-[100vh] flex p-[20px] flex-col justify-center md:p-[100px]'>
               <video className='object-cover opacity-[0.8] top-[0px] absolute  z-[-2] left-[0] w-[100%] h-[100%] xl:top-[-50px]' autoPlay={true} playsInline muted loop src='/static/videos/vid-HD.mp4'/>
               <div className='absolute left-[0] top-[0] w-[100%] h-[100%] bg-[#3e3e3e] z-[-1] mix-blend-overlay	'></div>

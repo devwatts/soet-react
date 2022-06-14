@@ -23,9 +23,9 @@ export default function Footer(){
                 <span className='mt-[30px] mb-[10px] text-center text-[#91d8f7] font-bold text-[17px]'>SUBSCRIBE TO UPDATES</span>
                     <div className='flex mt-[10px] mb-[30px] bg-[#fff] p-[20px] w-fit self-center	'>
                        <form action='/' className="w-full max-w-sm">
-                            <div class="flex items-center border-b border-[#ed3237] py-2">
-                              <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Email Address" aria-label="Full name"/>
-                              <button class="flex-shrink-0 bg-[#ed3237] border-[#ed3237] text-sm border-4 text-white py-1 px-2 rounded" type="submit">
+                            <div className="flex items-center border-b border-[#ed3237] py-2">
+                              <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Email Address" aria-label="Full name"/>
+                              <button className="flex-shrink-0 bg-[#ed3237] border-[#ed3237] text-sm border-4 text-white py-1 px-2 rounded" type="submit">
                                 Sign Up
                               </button>
                             </div>
