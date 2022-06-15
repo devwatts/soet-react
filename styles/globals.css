@@ -9,7 +9,7 @@ body{
 }
 
 .sidebar-open{
-    width: 180px;
+    width: 100%;
 }
 
 .sidebar-close{
