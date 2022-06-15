@@ -7,3 +7,11 @@ body{
     font-family: 'Poppins';
     background-color: #F1F1F5;
 }
+
+.sidebar-open{
+    width: 180px;
+}
+
+.sidebar-close{
+    width: 0px;
+}

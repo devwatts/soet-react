@@ -2,9 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default function SideBar(props){
-
     return(
-        <div className={`fixed z-[100] bg-[white] right-[0px] w-${props.status?'[180px]':'0'} h-[100vh] transition-all`}>
+        <div className={`fixed z-[100] bg-[white] right-[0px] ${props.status?'sidebar-open':'sidebar-close'} h-[100vh] transition-all`}>
             <div className='p-[30px]'>
                 <div className='flex justify-end'>
                     <button onClick={() => {props.sideBarToggle(false)}}><Image src={'/static/images/close-x.png'}  width={'30px'} height={'30px'}></Image></button>
