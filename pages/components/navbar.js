@@ -11,9 +11,9 @@ const Navbar = (props) => {
       }
     >
       <div className="flex">
-        <div>
-          <Image src="/static/images/logo.png" width={"80px"} height={"80px"} />
-        </div>
+        <Link href="/">
+          <Image src="/static/images/logo.png" class="cursor-pointer" width={"80px"} height={"80px"} />
+        </Link>
         <div className="flex text-white flex-col justify-center	text-center lg:text-center font-bold ml-2">
           <span className="text-3xl">SOET</span>
           <span className="text-sm font-bold">
@@ -25,7 +25,7 @@ const Navbar = (props) => {
         <Link href="#">
           <a className="m-3 font-light hover:text-red-400">Announcements</a>
         </Link>
-        <Link href="#">
+        <Link href="/faculty">
           <a className="m-3 font-light hover:text-red-400">Faculty</a>
         </Link>
         <Link href="/events">

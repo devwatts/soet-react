@@ -10,7 +10,7 @@ export default function Footer(){
                   <Image src="/static/images/logo.png" height={'100px'} width={'100px'} layout={'fixed'}/>
                   <Link href={'#'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>Academics</a></Link>
                   <Link href={'#'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>Admissions</a></Link>
-                  <Link href={'#'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>Faculty</a></Link>
+                  <Link href={'/faculty'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>Faculty</a></Link>
                   <Link href={'#'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>Examination</a></Link>
                   <Link href={'#'}><a className='mt-[10px] mb-[10px] text-[#91d8f7] font-bold text-[17px]'>About SOET</a></Link>
                   <div className='mt-[10px] mb-[20px] flex flex-col w-100'>
