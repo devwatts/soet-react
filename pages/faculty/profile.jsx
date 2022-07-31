@@ -1,9 +1,12 @@
 import {FaCloudUploadAlt} from 'react-icons/fa';
+import Layout from '../../components/Faculty2.0/Layout';
 
 const Profile = () => {
     
     return (
-        <div className="settings">
+      <>
+      <Layout>
+      <div className="settings">
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsUpdateTitle">Update Your Account</span>
@@ -47,6 +50,9 @@ const Profile = () => {
       </div>
       {/* <Categories /> */}
     </div>
+      </Layout>
+      </>
+        
     );
 }
  
