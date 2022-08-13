@@ -34,15 +34,6 @@ const Navbar = (props) => {
         <Link href="#">
           <a className="m-3 font-light hover:text-red-400">Research</a>
         </Link>
-        <Link href={"/auth/faculty/login"} passHref className={""}>
-          <a
-            className={
-              "bg-[#ed3237] text-white px-[15px] py-1 transition-all t-[16px] rounded-[100px] hover:tracking-[1px]"
-            }
-          >
-            Login
-          </a>
-        </Link>
       </div>
       <div
         onClick={() => props.sideBarToggle(true)}

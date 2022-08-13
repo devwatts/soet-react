@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Navbar from './components/navbar';
-import HalfCard from './components/halfCard';
-import FullCard from './components/fullCard';
+import Navbar from '../components/layout/navbar';
+import HalfCard from '../components/landing-page/halfCard';
+import FullCard from '../components/landing-page/fullCard';
 import ImageGallery from 'react-image-gallery';
-import Footer from './components/footer';
-import SideBar from './components/sideBar';
+import Footer from '../components/layout/footer';
+import SideBar from '../components/layout/sideBar';
 import { useState } from 'react';
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";

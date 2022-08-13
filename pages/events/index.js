@@ -1,9 +1,10 @@
-import Navbar from "../components/navbar";
+import Navbar from "../../components/layout/navbar";
 import Head from 'next/head';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import CardRowTwo from "../components/cardRowTwo";
-import Footer from "../components/footer";
+import CardRowTwo from "../../components/landing-page/cardRowTwo";
+import Footer from "../../components/layout/footer";
+
 
 export default function Events(){
     const images = [
