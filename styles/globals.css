@@ -8,6 +8,13 @@ body{
     background-color: #F1F1F5;
 }
 
+/*------------Highlights Navigation------------*/
+.mySwiper{
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+/*------------Highlights Navigation ends------------*/
+
 .sidebar-open{
     width: 100%;
 }
