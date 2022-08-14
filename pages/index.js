@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
         <HighlightNavigation></HighlightNavigation>
-        <div className="md:flex md:flex-row-reverse justify-between md:h-[400px]">
+        <div className="md:flex md:flex-row-reverse justify-between md:h-[600px] lg:h-[400px]">
           <SideNavigation></SideNavigation>
           <Highlights></Highlights>
         </div>

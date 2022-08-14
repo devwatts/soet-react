@@ -8,12 +8,11 @@ body{
     background-color: #F1F1F5;
 }
 
-/*------------Highlights Navigation------------*/
-.mySwiper{
-  margin-left: 40px !important;
-  margin-right: 40px !important;
+/*------------Side Navigation------------*/
+button{
+  transition: all ease 0.5s;
 }
-/*------------Highlights Navigation ends------------*/
+/*------------Side Navigation ends------------*/
 
 .sidebar-open{
     width: 100%;
