@@ -1,7 +1,7 @@
 export default function SideNavigation() {
   return (
     <div className="md:w-[30%] sm:w-[90%] flex flex-wrap justify-between m-[20px] items-center">
-      <div className="flex md:mt-[0] sm:mt-[20px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#ed3237] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Home
@@ -13,7 +13,7 @@ export default function SideNavigation() {
           </button>
         </div>
       </div>
-      <div className="flex md:mt-[0] sm:mt-[15px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#006cb5] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Departmental PEOs & PSOs
@@ -25,7 +25,7 @@ export default function SideNavigation() {
           </button>
         </div>
       </div>
-      <div className="flex md:mt-[0] sm:mt-[15px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#006cb5] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Department Highlights
@@ -37,7 +37,7 @@ export default function SideNavigation() {
           </button>
         </div>
       </div>
-      <div className="flex md:mt-[0] sm:mt-[15px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#006cb5] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Resources
@@ -49,7 +49,7 @@ export default function SideNavigation() {
           </button>
         </div>
       </div>
-      <div className="flex md:mt-[0] sm:mt-[15px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#006cb5] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Academic Results
@@ -61,7 +61,7 @@ export default function SideNavigation() {
           </button>
         </div>
       </div>
-      <div className="flex md:mt-[0] sm:mt-[15px] w-[100%] justify-between">
+      <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button className=" bg-[#006cb5] border-[#ed3237] text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]">
             Alumni
