@@ -18,12 +18,12 @@ const images = [
 export default function Highlights() {
   return (
     <>
-      <div className="flex md:flex-row flex-col-reverse md:justify-around justify-center mt-[50px] mb-[10px] items-center">
-        <div className="md:w-[40%] w-[90%] flex flex-col">
-          <span className="text-[26px] text-[#006cb5] font-bold text-">
+      <div className="flex lg:flex-row-reverse flex-col-reverse justify-around mt-[50px] mb-[10px] items-center md:w-[65%]">
+        <div className="lg:w-[45%] w-[80%] flex flex-col">
+          <span className="text-[22px] text-[#006cb5] font-bold text-">
             Achieve the ultimate career growth with us
           </span>
-          <span className="text-[18px]">
+          <span className="text-[16px]">
             Founded in 2013, K.R. Mangalam University is establishing itself as
             an innovative and unique educational institution and is counted
             amongst the premier engineering colleges in Delhi NCR, offering
@@ -33,7 +33,7 @@ export default function Highlights() {
             the globe.
           </span>
         </div>
-        <div className="md:w-[40%] mb-[40px] md:mb-[0px] w-[90%]">
+        <div className=" mb-[40px] md:mb-[0px] lg:w-[45%] w-[80%]">
           <ImageGallery
             showPlayButton={false}
             showFullscreenButton={false}

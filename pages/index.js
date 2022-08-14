@@ -4,6 +4,7 @@ import HalfCard from "../components/landing-page/cards/halfCard";
 import FullCard from "../components/landing-page/cards/fullCard";
 import Highlights from "../components/landing-page/Highlights";
 import HighlightNavigation from "../components/landing-page/HighlightsNavigation";
+import SideNavigation from "../components/landing-page/SideNavigation";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
 import { useState } from "react";
@@ -46,7 +47,10 @@ export default function Home() {
           </div>
         </div>
         <HighlightNavigation></HighlightNavigation>
-        <Highlights></Highlights>
+        <div className="md:flex md:flex-row-reverse justify-between md:h-[400px]">
+          <SideNavigation></SideNavigation>
+          <Highlights></Highlights>
+        </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>
           <HalfCard title={"Achievements"}></HalfCard>
