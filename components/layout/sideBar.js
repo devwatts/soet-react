@@ -6,7 +6,7 @@ export default function SideBar(props){
         <div className={`fixed z-[100] bg-[white] right-[0px] ${props.status?'sidebar-open':'sidebar-close'} h-[100vh] transition-all`}>
             <div className='p-[30px]'>
                 <div className='flex justify-end'>
-                    <button onClick={() => {props.sideBarToggle(false)}}><Image src={'/static/images/close-x.png'}  width={'30px'} height={'30px'}></Image></button>
+                    <button onClick={() => {props.sideBarToggle(false)}}><Image src={'/static/images/close-x.svg'}  width={'30px'} height={'30px'}/></button>
                 </div>
                 <div className='flex flex-col'>
                     <Link href={'#'}><a className='mt-[20px]'>Announcments</a></Link>

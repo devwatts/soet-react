@@ -2,7 +2,7 @@ import Navbar from "../../components/layout/navbar";
 import Head from 'next/head';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import CardRowTwo from "../../components/landing-page/cardRowTwo";
+import CardRowTwo from "../../components/landing-page/cards/cardRowTwo";
 import Footer from "../../components/layout/footer";
 
 

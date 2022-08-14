@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../components/layout/navbar';
-import HalfCard from '../components/landing-page/halfCard';
-import FullCard from '../components/landing-page/fullCard';
-import ImageGallery from 'react-image-gallery';
+import HalfCard from '../components/landing-page/cards/halfCard';
+import FullCard from '../components/landing-page/cards/fullCard';
+import Highlights from '../components/landing-page/Highlights';
 import Footer from '../components/layout/footer';
 import SideBar from '../components/layout/sideBar';
 import { useState } from 'react';
@@ -11,23 +11,7 @@ import { useState } from 'react';
 import "react-image-gallery/styles/css/image-gallery.css";
 
 
-const images = [
-  {
-    original: 'https://www.reviewadda.com/assets/uploads/article_images/drone.jpg',
-    originalClass:'landing-highlight' 
-    
-  },
-  {
-    original: 'https://i.ytimg.com/vi/je9Rr7VrPSk/maxresdefault.jpg',
-    originalClass:'landing-highlight' 
-    
-  },
-  {
-    original: 'https://res.cloudinary.com/practicaldev/image/fetch/s--GuYsE3jw--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/v468zo7rtz3vcrr4jjdt.jpeg',
-    originalClass:'landing-highlight'  
-    
-  },
-];
+
 
 export default function Home() {
   const [sideBar,setSideBar] = useState(false);
@@ -55,15 +39,7 @@ export default function Home() {
           <div className='bg-[#ed3237] h-[80px] z-50 w-[100%] mt-[-80px]'>
                 <span className='ml-[40px] text-white text-[1.5em] font-bold bg-[#006cb5] h-[90px] absolute mt-[-10px] p-[20px] w-fit leading-[50px]'>HIGHLIGHTS</span>
           </div>
-          <div className='flex md:flex-row flex-col-reverse md:justify-around justify-center mt-[50px] mb-[10px] items-center'>
-              <div className='md:w-[40%] w-[90%] flex flex-col'>
-                <span className='text-[26px] text-[#006cb5] font-bold text-'>Achieve the ultimate career growth with us</span>
-                <span className='text-[18px]'>Founded in 2013, K.R. Mangalam University is establishing itself as an innovative and unique educational institution and is counted amongst the premier engineering colleges in Delhi NCR, offering Engineering and Technology courses. SOET is founded to bring outstanding academicians and industry professionals under one roof to create a world-class teaching hub for aspiring engineers around the globe.</span>
-              </div>
-              <div className='md:w-[40%] mb-[40px] md:mb-[0px] w-[90%]'>
-                 <ImageGallery showPlayButton={false} showFullscreenButton={false} showNav={false} infinite={true} showBullets={true} items={images} />
-              </div>
-          </div>
+          <Highlights></Highlights>
           <div className='flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]'>
                   <HalfCard title={"Announcements"}></HalfCard>
                   <HalfCard title={"Achievements"}></HalfCard>
