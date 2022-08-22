@@ -20,7 +20,7 @@ export default function Highlights(props) {
       <div
         className={`${
           props.currentOption == "DEPARTMENT HIGHLIGHTS"
-            ? "flex flex-col-reverse justify-around w-[65%] sm:w-[90%] ml-[auto] mr-[auto] mt-[50px] mb-[10px] items-center"
+            ? "flex flex-col-reverse justify-around w-[65%] sm:w-[65%] ml-[auto] mr-[auto] mt-[50px] mb-[10px] items-center"
             : "hidden"
         }`}
       >

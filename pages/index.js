@@ -6,6 +6,7 @@ import Highlights from "../components/landing-page/Highlights";
 import HomeInfo from "../components/landing-page/Home";
 import HighlightNavigation from "../components/landing-page/HighlightsNavigation";
 import SideNavigation from "../components/landing-page/SideNavigation";
+import PEOandPSO from "../components/landing-page/PEOandPSO";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
 import { useState } from "react";
@@ -61,6 +62,7 @@ export default function Home() {
           <Highlights currentOption={navigationOption}></Highlights>
           <HomeInfo currentOption={navigationOption}> </HomeInfo>
           <ResourcesInfo currentOption={navigationOption}></ResourcesInfo>
+          <PEOandPSO currentOption={navigationOption}></PEOandPSO>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>
