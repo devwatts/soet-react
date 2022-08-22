@@ -12,6 +12,7 @@ import { useState } from "react";
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
+import ResourcesInfo from "../components/landing-page/ResourcesInfo";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
@@ -52,13 +53,14 @@ export default function Home() {
         <HighlightNavigation
           currentOption={navigationOption}
         ></HighlightNavigation>
-        <div className="md:flex md:flex-row-reverse justify-between md:h-[600px] lg:h-[400px]">
+        <div className="md:flex md:flex-row-reverse w-[90%] ml-[auto] mr-[auto] justify-between  lg:h-[fit-content]">
           <SideNavigation
             currentOption={navigationOption}
             changeOption={setnavigationOption}
           ></SideNavigation>
           <Highlights currentOption={navigationOption}></Highlights>
           <HomeInfo currentOption={navigationOption}> </HomeInfo>
+          <ResourcesInfo currentOption={navigationOption}></ResourcesInfo>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>

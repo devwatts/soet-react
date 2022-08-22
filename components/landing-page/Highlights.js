@@ -20,11 +20,11 @@ export default function Highlights(props) {
       <div
         className={`${
           props.currentOption == "DEPARTMENT HIGHLIGHTS"
-            ? "flex lg:flex-row-reverse flex-col-reverse justify-around mt-[50px] mb-[10px] items-center md:w-[65%]"
+            ? "flex flex-col-reverse justify-around w-[65%] sm:w-[90%] ml-[auto] mr-[auto] mt-[50px] mb-[10px] items-center"
             : "hidden"
         }`}
       >
-        <div className="lg:w-[45%] w-[80%] flex flex-col">
+        <div className="w-[100%] mt-[30px] flex flex-col">
           <span className="text-[22px] text-[#006cb5] font-bold text-">
             Achieve the ultimate career growth with us
           </span>
@@ -40,7 +40,7 @@ export default function Highlights(props) {
             the School.
           </span>
         </div>
-        <div className=" mb-[40px] md:mb-[0px] lg:w-[45%] w-[80%]">
+        <div className=" mb-[40px] md:mb-[0px] w-[80%]">
           <ImageGallery
             showPlayButton={false}
             showFullscreenButton={false}

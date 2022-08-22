@@ -1,6 +1,6 @@
 export default function SideNavigation(props) {
   return (
-    <div className="md:w-[30%] sm:w-[90%] flex flex-wrap justify-between m-[20px] items-center">
+    <div className="md:w-[30%] sm:w-[90%] flex flex-wrap justify-between m-[20px] items-center h-[400px]">
       <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button
