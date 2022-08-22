@@ -3,6 +3,7 @@ import Navbar from "../components/layout/navbar";
 import HalfCard from "../components/landing-page/cards/halfCard";
 import FullCard from "../components/landing-page/cards/fullCard";
 import Highlights from "../components/landing-page/Highlights";
+import HomeInfo from "../components/landing-page/Home";
 import HighlightNavigation from "../components/landing-page/HighlightsNavigation";
 import SideNavigation from "../components/landing-page/SideNavigation";
 import Footer from "../components/layout/footer";
@@ -14,6 +15,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
+  const [navigationOption, setnavigationOption] = useState("HOME");
+
   return (
     <div>
       <Head>
@@ -46,10 +49,16 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <HighlightNavigation></HighlightNavigation>
+        <HighlightNavigation
+          currentOption={navigationOption}
+        ></HighlightNavigation>
         <div className="md:flex md:flex-row-reverse justify-between md:h-[600px] lg:h-[400px]">
-          <SideNavigation></SideNavigation>
-          <Highlights></Highlights>
+          <SideNavigation
+            currentOption={navigationOption}
+            changeOption={setnavigationOption}
+          ></SideNavigation>
+          <Highlights currentOption={navigationOption}></Highlights>
+          <HomeInfo currentOption={navigationOption}> </HomeInfo>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>
