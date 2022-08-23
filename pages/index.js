@@ -10,6 +10,7 @@ import PEOandPSO from "../components/landing-page/PEOandPSO";
 import Placements from "../components/landing-page/Placements";
 import FacultyInfo from "../components/landing-page/faculty";
 import ResearchDevelopment from "../components/landing-page/ResearchDevelopment";
+import VisionMission from "../components/landing-page/VisionMission";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
 import { useState } from "react";
@@ -71,6 +72,7 @@ export default function Home() {
           <ResearchDevelopment
             currentOption={navigationOption}
           ></ResearchDevelopment>
+          <VisionMission currentOption={navigationOption}></VisionMission>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>
