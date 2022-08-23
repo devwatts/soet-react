@@ -7,6 +7,9 @@ import HomeInfo from "../components/landing-page/Home";
 import HighlightNavigation from "../components/landing-page/HighlightsNavigation";
 import SideNavigation from "../components/landing-page/SideNavigation";
 import PEOandPSO from "../components/landing-page/PEOandPSO";
+import Placements from "../components/landing-page/Placements";
+import FacultyInfo from "../components/landing-page/faculty";
+import ResearchDevelopment from "../components/landing-page/ResearchDevelopment";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
 import { useState } from "react";
@@ -63,6 +66,11 @@ export default function Home() {
           <HomeInfo currentOption={navigationOption}> </HomeInfo>
           <ResourcesInfo currentOption={navigationOption}></ResourcesInfo>
           <PEOandPSO currentOption={navigationOption}></PEOandPSO>
+          <Placements currentOption={navigationOption}></Placements>
+          <FacultyInfo currentOption={navigationOption}></FacultyInfo>
+          <ResearchDevelopment
+            currentOption={navigationOption}
+          ></ResearchDevelopment>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
           <HalfCard title={"Announcements"}></HalfCard>
