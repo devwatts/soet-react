@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = (props) => {
+  const { push } = useRouter();
   return (
     <div
       className={
@@ -10,15 +12,14 @@ const Navbar = (props) => {
           : "flex w-[100%] justify-between bg-[#006cb5] lg:justify-between items-center z-50 p-3"
       }
     >
-      <div className="flex">
-        <Link href="/">
-          <Image
-            src="/static/images/logo.png"
-            class="cursor-pointer"
-            width={props.transparent ? "80px" : "60px"}
-            height={props.transparent ? "80px" : "60px"}
-          />
-        </Link>
+      <div onClick={() => push("/")} className="flex cursor-pointer">
+        <Image
+          src="/static/images/logo.png"
+          class="cursor-pointer"
+          width={props.transparent ? "80px" : "60px"}
+          height={props.transparent ? "80px" : "60px"}
+        />
+
         <div className="flex text-white flex-col justify-center	text-center lg:text-center font-bold ml-2">
           <span className="text-3xl">SOET</span>
           <span className="text-sm font-bold">

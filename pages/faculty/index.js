@@ -6,6 +6,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import SideBar from "../../components/layout/sideBar";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Faculty() {
   const [sideBar, setSideBar] = useState(false);
@@ -37,6 +38,10 @@ export default function Faculty() {
       <div>
         <SideBar sideBarToggle={setSideBar} status={sideBar}></SideBar>
         <Navbar sideBarToggle={setSideBar} transparent={false}></Navbar>
+        <img
+          className=" w-[100%]"
+          src="/static/images/faculty/SpreadBanner.PNG"
+        />
         <div className="bg-[#006cb5] p-[20px] w-[90%] ml-[auto] mr-[auto] mt-[75px] border-4 border-[red] flex flex-col justify-between rounded-lg lg:flex-row lg:w-[75%]">
           <div className="w-[100%] mb-[20px] lg:w-[40%] lg:mb-[0]">
             <ImageGallery

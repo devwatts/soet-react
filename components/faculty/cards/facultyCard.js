@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FacultyCard() {
   return (
-    <div className="bg-[#fff] h-[310px] m-[15px] flex flex-col p-[15px] cursor-pointer rounded">
+    <div className="bg-[#fff] h-[310px] m-[15px] flex flex-col p-[15px] cursor-pointer rounded hover:scale-105 transition-all">
       <div className="m-[auto]">
         <Image
           src="/static/images/faculty/pankaj.webp"
