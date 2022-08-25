@@ -42,7 +42,7 @@ export default function Faculty() {
             <ImageGallery
               showPlayButton={false}
               showFullscreenButton={false}
-              showNav={false}
+              showNav={true}
               infinite={true}
               showBullets={true}
               items={images}

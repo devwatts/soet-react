@@ -3,7 +3,7 @@ export default function VisionMission(props) {
     <>
       <div
         className={`${
-          props.currentOption == "DEPARTMENT VISION & MISSION"
+          props.currentOption == "SOET VISION & MISSION"
             ? "flex mt-[50px] mb-[10px] items-start sm:w-[90%] ml-[auto] mr-[auto] md:w-[65%]"
             : "hidden"
         }`}

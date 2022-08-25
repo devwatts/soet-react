@@ -43,7 +43,7 @@ export default function Events() {
             <ImageGallery
               showPlayButton={false}
               showFullscreenButton={false}
-              showNav={false}
+              showNav={true}
               infinite={true}
               showBullets={true}
               items={images}

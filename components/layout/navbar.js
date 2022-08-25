@@ -15,8 +15,8 @@ const Navbar = (props) => {
           <Image
             src="/static/images/logo.png"
             class="cursor-pointer"
-            width={"60px"}
-            height={"60px"}
+            width={props.transparent ? "80px" : "60px"}
+            height={props.transparent ? "80px" : "60px"}
           />
         </Link>
         <div className="flex text-white flex-col justify-center	text-center lg:text-center font-bold ml-2">
@@ -37,8 +37,11 @@ const Navbar = (props) => {
           <a className="m-3 font-light hover:text-red-400">Events</a>
         </Link>
         <Link href="#">
-          <a className="m-3 font-light hover:text-red-400">Research</a>
+          <a className="m-3 font-light hover:text-red-400">Achievements</a>
         </Link>
+        {/* <Link href="#">
+          <a className="m-3 font-light hover:text-red-400">Research</a>
+        </Link> */}
       </div>
       <div
         onClick={() => props.sideBarToggle(true)}
