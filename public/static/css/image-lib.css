@@ -10,5 +10,16 @@
     max-width: 100%  !important;
 }
 .event-front img{
-    border-radius: 10px !important;
+    height: auto !important;
+    max-height: 400px !important;
+    width: auto !important;
+    border-radius: 20px  !important;
+    max-width: 100%  !important;
+}
+.faculty-front img{
+    height: auto !important;
+    max-height: 400px !important;
+    width: auto !important;
+    border-radius: 20px  !important;
+    max-width: 100%  !important;
 }
