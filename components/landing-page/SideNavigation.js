@@ -9,7 +9,7 @@ export default function SideNavigation(props) {
               props.currentOption === "HOME"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Home
           </button>
@@ -21,7 +21,7 @@ export default function SideNavigation(props) {
               props.currentOption === "SOET VISION & MISSION"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             SOET Vision & Mission
           </button>
@@ -35,7 +35,7 @@ export default function SideNavigation(props) {
               props.currentOption === "DEPARTMENTAL PEO'S & PSO's"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Departmental PEOs & PSOs
           </button>
@@ -47,7 +47,7 @@ export default function SideNavigation(props) {
               props.currentOption === "FACULTY"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Faculty
           </button>
@@ -61,7 +61,7 @@ export default function SideNavigation(props) {
               props.currentOption === "DEPARTMENT HIGHLIGHTS"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Department Highlights
           </button>
@@ -73,7 +73,7 @@ export default function SideNavigation(props) {
               props.currentOption === "RESEARCH & DEVELOPMENT"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Research & Development
           </button>
@@ -87,7 +87,7 @@ export default function SideNavigation(props) {
               props.currentOption === "RESOURCES"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Resources
           </button>
@@ -99,7 +99,7 @@ export default function SideNavigation(props) {
               props.currentOption === "PLACEMENT RECORDS"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Placement Records
           </button>
@@ -113,7 +113,7 @@ export default function SideNavigation(props) {
               props.currentOption === "ALUMNI"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             Our Alumni
           </button>
@@ -125,7 +125,7 @@ export default function SideNavigation(props) {
               props.currentOption === "MAGAZINE"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
+            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
             SOET Magazine
           </button>
