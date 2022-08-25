@@ -59,7 +59,7 @@ export default function Home() {
         <HighlightNavigation
           currentOption={navigationOption}
         ></HighlightNavigation>
-        <div className="md:flex md:flex-row-reverse w-[90%] ml-[auto] mr-[auto] justify-between  lg:h-[fit-content]">
+        <div className="lg:flex lg:flex-row-reverse w-[90%] ml-[auto] mr-[auto] justify-between  lg:h-[fit-content]">
           <SideNavigation
             currentOption={navigationOption}
             changeOption={setnavigationOption}

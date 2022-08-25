@@ -12,7 +12,12 @@ const Navbar = (props) => {
     >
       <div className="flex">
         <Link href="/">
-          <Image src="/static/images/logo.png" class="cursor-pointer" width={"80px"} height={"80px"} />
+          <Image
+            src="/static/images/logo.png"
+            class="cursor-pointer"
+            width={"80px"}
+            height={"80px"}
+          />
         </Link>
         <div className="flex text-white flex-col justify-center	text-center lg:text-center font-bold ml-2">
           <span className="text-3xl">SOET</span>
@@ -39,11 +44,14 @@ const Navbar = (props) => {
         onClick={() => props.sideBarToggle(true)}
         className="flex justify-end cursor-pointer lg:hidden"
       >
-        <Image
-          src={"/static/images/menu.png"}
-          width={"30px"}
-          height={"30px"}
-        ></Image>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={30}
+          height={30}
+          className="fill-[white]"
+        >
+          <path d="M24 6H0V2h24v4zm0 4H0v4h24v-4zm0 8H0v4h24v-4z" />
+        </svg>
       </div>
     </div>
   );

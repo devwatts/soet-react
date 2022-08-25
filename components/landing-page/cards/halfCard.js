@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import getAllAnnouncementsApi from "../../../utils/apis";
 
 const HalfCard = (props) => {
-  console.log(props);
   useEffect(() => {
     if (props.title == "Announcements") {
       getAllAnnouncements();

@@ -1,6 +1,6 @@
 export default function SideNavigation(props) {
   return (
-    <div className="md:w-[30%] sm:w-[90%] flex flex-wrap justify-between m-[20px] items-center h-[400px]">
+    <div className="lg:w-[30%] md:w-[90%] flex flex-wrap justify-between m-[20px] sm:ml-[auto] sm:mr-[auto] lg:ml-[20px] lg:mr-[20px] items-center h-[400px]">
       <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button
@@ -108,32 +108,6 @@ export default function SideNavigation(props) {
       <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button
-            onClick={() => props.changeOption("ACADEMIC RESULTS")}
-            className={`${
-              props.currentOption === "ACADEMIC RESULTS"
-                ? "bg-[#ed3237] border-[#ed3237]"
-                : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
-          >
-            Academic Results
-          </button>
-        </div>
-        <div className="flex  w-[45%] before:bg-[#ed3237] ">
-          <button
-            onClick={() => props.changeOption("EVENTS")}
-            className={`${
-              props.currentOption === "EVENTS"
-                ? "bg-[#ed3237] border-[#ed3237]"
-                : "bg-[#006cb5] border-[#ed3237]"
-            } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
-          >
-            Departmental Events
-          </button>
-        </div>
-      </div>
-      <div className="flex mt-[10px] w-[100%] justify-between">
-        <div className="flex  w-[45%] before:bg-[#ed3237] ">
-          <button
             onClick={() => props.changeOption("ALUMNI")}
             className={`${
               props.currentOption === "ALUMNI"
@@ -141,7 +115,7 @@ export default function SideNavigation(props) {
                 : "bg-[#006cb5] border-[#ed3237]"
             } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
           >
-            Alumni
+            Our Alumni
           </button>
         </div>
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
@@ -153,7 +127,7 @@ export default function SideNavigation(props) {
                 : "bg-[#006cb5] border-[#ed3237]"
             } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237]`}
           >
-            Dept.e-Magazine & Newsletters
+            SOET Magazine
           </button>
         </div>
       </div>

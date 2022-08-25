@@ -1,12 +1,12 @@
 const axios = require("axios").default;
-const baseUrl = "http://localhost:3000/";
+const baseUrl = "http://localhost:3000/" || process.env.REACT_APP_BASEURL;
 const APIENDPOINTS = {
   getAllAnnouncements: baseUrl + "announcement",
 };
 
 export default function getAllAnnouncementsApi() {
   axios
-    .get(baseUrl + "announcement")
+    .get(APIENDPOINTS.getAllAnnouncements)
     .then(function (response) {
       // handle success
       console.log(response);
