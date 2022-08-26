@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function FacultyCard(props) {
-  console.log(props);
   return (
     <div className="bg-[#fff] h-[310px] m-[15px] flex flex-col p-[15px] cursor-pointer rounded hover:scale-105 transition-all">
       <div className="m-[auto]">
