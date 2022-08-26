@@ -3,12 +3,13 @@ const webpack = require("webpack");
 
 const nextConfig = {
   reactStrictMode: true,
-  
- 
-}
 
-module.exports = nextConfig
+  images: {
+    domains: ["www.krmangalam.edu.in"],
+  },
+};
 
+module.exports = nextConfig;
 
 /*
 
@@ -21,4 +22,4 @@ webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   }))
   return config;
 },
-*/ 
+*/

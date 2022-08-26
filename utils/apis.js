@@ -11,7 +11,7 @@ function getAllAnnouncementsApi() {
       .get(APIENDPOINTS.getAllAnnouncements)
       .then(function (response) {
         // handle success
-        console.log(response);
+        //console.log(response);
         resolve(response.data);
       })
       .catch(function (error) {
@@ -25,19 +25,22 @@ function getAllAnnouncementsApi() {
 }
 
 function getAllFaculty() {
-  axios
-    .get(APIENDPOINTS.getAllFaculty)
-    .then(function (response) {
-      // handle success
-      console.log(response);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    })
-    .then(function () {
-      // always executed
-    });
+  return new Promise((resolve, reject) => {
+    axios
+      .get(APIENDPOINTS.getAllFaculty)
+      .then(function (response) {
+        // handle success
+        //console.log(response);
+        resolve(response.data.data);
+      })
+      .catch(function (error) {
+        // handle error
+        //console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  });
 }
 
 export default { getAllAnnouncementsApi, getAllFaculty };

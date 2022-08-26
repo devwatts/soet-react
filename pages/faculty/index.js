@@ -5,8 +5,8 @@ import FacultyCard from "../../components/faculty/cards/facultyCard";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import SideBar from "../../components/layout/sideBar";
-import { useState } from "react";
-import getAllFaculty from "../../utils/apis";
+import { useState, useEffect } from "react";
+import API from "../../utils/apis";
 
 const images = [
   {
@@ -28,6 +28,14 @@ const images = [
 
 export default function Faculty() {
   const [sideBar, setSideBar] = useState(false);
+  const [FacultyData, setFacultyData] = useState();
+
+  useEffect(() => {
+    async function getAllFacultyData() {
+      setFacultyData(await API.getAllFaculty());
+    }
+    getAllFacultyData();
+  }, []);
 
   return (
     <div>
@@ -79,22 +87,11 @@ export default function Faculty() {
             </span>
           </div>
           <div className="flex flex-wrap justify-center">
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
-            <FacultyCard></FacultyCard>
+            {FacultyData
+              ? FacultyData.map((value, key) => {
+                  return <FacultyCard data={value} key={key}></FacultyCard>;
+                })
+              : ""}
           </div>
         </div>
         <Footer></Footer>
