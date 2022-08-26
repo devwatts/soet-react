@@ -1,5 +1,5 @@
 const axios = require("axios").default;
-const baseUrl = "http://localhost:3000/" || process.env.REACT_APP_BASEURL;
+const baseUrl = process.env.REACT_APP_BASEURL || "http://localhost:3000/";
 const APIENDPOINTS = {
   getAllAnnouncements: baseUrl + "announcement",
   getAllFaculty: baseUrl + "faculty",
