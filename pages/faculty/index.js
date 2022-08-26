@@ -6,27 +6,29 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import SideBar from "../../components/layout/sideBar";
 import { useState } from "react";
-import Image from "next/image";
+import getAllFaculty from "../../utils/apis";
+
+const images = [
+  {
+    original:
+      "https://www.krmangalam.edu.in/uploads/largeimages/130pg_099a6668.jpg",
+    originalClass: "faculty-front",
+  },
+  {
+    original:
+      "https://www.krmangalam.edu.in/uploads/largeimages/129pg_099a6660.jpg",
+    originalClass: "faculty-front",
+  },
+  {
+    original:
+      "https://www.krmangalam.edu.in/uploads/largeimages/131pg_099a6672.jpg",
+    originalClass: "faculty-front",
+  },
+];
 
 export default function Faculty() {
   const [sideBar, setSideBar] = useState(false);
-  const images = [
-    {
-      original:
-        "https://www.krmangalam.edu.in/uploads/largeimages/130pg_099a6668.jpg",
-      originalClass: "faculty-front",
-    },
-    {
-      original:
-        "https://www.krmangalam.edu.in/uploads/largeimages/129pg_099a6660.jpg",
-      originalClass: "faculty-front",
-    },
-    {
-      original:
-        "https://www.krmangalam.edu.in/uploads/largeimages/131pg_099a6672.jpg",
-      originalClass: "faculty-front",
-    },
-  ];
+
   return (
     <div>
       <Head>

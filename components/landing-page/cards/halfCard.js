@@ -1,22 +1,16 @@
 import Link from "next/link";
 import CardRow from "./cardRow";
 import { useEffect } from "react";
-import getAllAnnouncementsApi from "../../../utils/apis";
+import API from "../../../utils/apis";
 
 const HalfCard = (props) => {
   useEffect(() => {
     if (props.title == "Announcements") {
-      getAllAnnouncements();
+      console.log(props);
     } else if (props.title == "Achievements") {
-      getAllAchievements();
+      console.log(props);
     }
-  }, [props.title]);
-
-  const getAllAchievements = () => {};
-  const getAllAnnouncements = () => {
-    getAllAnnouncementsApi();
-  };
-
+  }, [props.data]);
   return (
     <div
       className={`bg-[#006cb5] mt-[20px] w-[90%] h-[100%] justify-center rounded-[10px] p-[20px] lg:mt-[20px] lg:w-[40%]`}

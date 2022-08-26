@@ -32,10 +32,10 @@ export default function SideBar(props) {
           <Link href={"#"}>
             <a className="mt-[20px]">Achievements</a>
           </Link>
-          <Link href={"faculty"}>
+          <Link href={"/faculty"}>
             <a className="mt-[20px]">Faculty</a>
           </Link>
-          <Link href={"events"}>
+          <Link href={"/events"}>
             <a className="mt-[20px]">Events</a>
           </Link>
           <Link href={"#"}>

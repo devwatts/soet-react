@@ -14,7 +14,9 @@ import VisionMission from "../components/landing-page/VisionMission";
 import Alumni from "../components/landing-page/Alumni";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import API from "../utils/apis";
 
 //import "react-image-gallery/styles/scss/image-gallery.scss";
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -23,6 +25,18 @@ import ResourcesInfo from "../components/landing-page/ResourcesInfo";
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
   const [navigationOption, setnavigationOption] = useState("HOME");
+  const { push } = useRouter();
+  const [AchievementsData, setAchievementsData] = useState([]);
+  const [AnnouncementData, setAnnouncementData] = useState([]);
+
+  useEffect(() => {
+    async function setAnnouncements() {
+      await API.getAllAnnouncementsApi().then((resp) => {
+        setAnnouncementData(resp);
+      });
+    }
+    setAnnouncements();
+  }, []);
 
   return (
     <div>
@@ -51,7 +65,14 @@ export default function Home() {
               professionals under one roof to create a world-class teaching hub
               for aspiring engineers around the globe.
             </span>
-            <button className="bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] hover:tracking-[1px]">
+            <button
+              onClick={() =>
+                push(
+                  "https://www.krmangalam.edu.in/uploads/prospectus/4clfl_soet_brochure.pdf"
+                )
+              }
+              className="bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] hover:tracking-[1px]"
+            >
               EXPLORE PROGRAMS
             </button>
           </div>
@@ -77,7 +98,7 @@ export default function Home() {
           <Alumni currentOption={navigationOption}></Alumni>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
-          <HalfCard title={"Announcements"}></HalfCard>
+          <HalfCard data={AnnouncementData} title={"Announcements"}></HalfCard>
           <HalfCard title={"Achievements"}></HalfCard>
         </div>
         <div className="flex justify-around w-100">
