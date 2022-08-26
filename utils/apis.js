@@ -1,6 +1,6 @@
 const axios = require("axios").default;
 const baseUrl = "https://soet-backend.herokuapp.com/"; //process.env.REACT_APP_BASEURL || "http://localhost:3000/";
-console.log(process.env.REACT_APP_BASEURL);
+console.log(process.env);
 const APIENDPOINTS = {
   getAllAnnouncements: baseUrl + "announcement",
   getAllFaculty: baseUrl + "faculty",
