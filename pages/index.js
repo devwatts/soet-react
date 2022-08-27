@@ -36,6 +36,12 @@ export default function Home() {
       });
     }
     setAnnouncements();
+    async function setAchievements() {
+      await API.getAllAchievementsApi().then((resp) => {
+        setAchievementsData(resp);
+      });
+    }
+    setAchievements();
   }, []);
 
   return (
@@ -99,7 +105,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row">
           <HalfCard data={AnnouncementData} title={"Announcements"}></HalfCard>
-          <HalfCard data={AnnouncementData} title={"Achievements"}></HalfCard>
+          <HalfCard data={AchievementsData} title={"Achievements"}></HalfCard>
         </div>
         <div className="flex justify-around w-100">
           <FullCard width={"90%"}></FullCard>

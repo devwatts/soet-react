@@ -1,9 +1,10 @@
 const axios = require("axios").default;
-//const baseUrl = "https://soet-backend.herokuapp.com/";
-const baseUrl = "http://localhost:3000/";
+const baseUrl = "https://soet-backend.herokuapp.com/";
+//const baseUrl = "http://localhost:3000/";
 const APIENDPOINTS = {
   getAllAnnouncements: baseUrl + "announcement",
   getAllFaculty: baseUrl + "faculty",
+  getAllAchievements: baseUrl + "achievement",
 };
 
 function getAllAnnouncementsApi() {
@@ -44,4 +45,23 @@ function getAllFaculty() {
   });
 }
 
-export default { getAllAnnouncementsApi, getAllFaculty };
+function getAllAchievementsApi() {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(APIENDPOINTS.getAllAchievements)
+      .then(function (response) {
+        // handle success
+        //console.log(response);
+        resolve(response.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  });
+}
+
+export default { getAllAnnouncementsApi, getAllFaculty, getAllAchievementsApi };

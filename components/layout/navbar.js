@@ -15,7 +15,7 @@ const Navbar = (props) => {
       <div onClick={() => push("/")} className="flex cursor-pointer">
         <Image
           src="/static/images/logo.png"
-          class="cursor-pointer"
+          className="cursor-pointer"
           width={props.transparent ? "80px" : "60px"}
           height={props.transparent ? "80px" : "60px"}
         />

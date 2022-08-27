@@ -14,7 +14,7 @@ const HalfCard = (props) => {
   }, [props.data]);
   return (
     <div
-      className={`bg-[#006cb5] mt-[20px] w-[90%] h-[fit-content] justify-center rounded-[10px] p-[20px] lg:mt-[20px] lg:w-[40%]`}
+      className={`bg-[#006cb5] mt-[20px] min-h-[400px] w-[90%] h-[fit-content] justify-center rounded-[10px] p-[20px] lg:mt-[20px] lg:w-[40%]`}
     >
       <div className="flex justify-between">
         <span className="text-white text-[20px] font-bold">{props.title}</span>
