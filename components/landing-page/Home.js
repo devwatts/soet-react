@@ -21,7 +21,7 @@ export default function HomeInfo(props) {
       <div
         className={`${
           props.currentOption == "HOME"
-            ? "flex lg:flex-row-reverse flex-col-reverse justify-around mt-[50px] mb-[10px] items-center md:w-[65%]"
+            ? "flex lg:flex-row-reverse flex-col-reverse justify-around mt-[50px] mb-[10px] items-center w-[100%] lg:w-[65%]"
             : "hidden"
         }`}
       >

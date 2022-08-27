@@ -97,9 +97,9 @@ export default function Home() {
           <VisionMission currentOption={navigationOption}></VisionMission>
           <Alumni currentOption={navigationOption}></Alumni>
         </div>
-        <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row lg:h-[400px]">
+        <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row">
           <HalfCard data={AnnouncementData} title={"Announcements"}></HalfCard>
-          <HalfCard title={"Achievements"}></HalfCard>
+          <HalfCard data={AnnouncementData} title={"Achievements"}></HalfCard>
         </div>
         <div className="flex justify-around w-100">
           <FullCard width={"90%"}></FullCard>
