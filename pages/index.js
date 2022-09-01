@@ -24,7 +24,7 @@ import ResourcesInfo from "../components/landing-page/ResourcesInfo";
 
 export default function Home() {
   const [sideBar, setSideBar] = useState(false);
-  const [navigationOption, setnavigationOption] = useState("HOME");
+  const [navigationOption, setnavigationOption] = useState("DEAN'S MESSAGE");
   const { push } = useRouter();
   const [AchievementsData, setAchievementsData] = useState([]);
   const [AnnouncementData, setAnnouncementData] = useState([]);

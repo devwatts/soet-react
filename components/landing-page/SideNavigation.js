@@ -4,14 +4,14 @@ export default function SideNavigation(props) {
       <div className="flex mt-[10px] w-[100%] justify-between">
         <div className="flex  w-[45%] before:bg-[#ed3237] ">
           <button
-            onClick={() => props.changeOption("HOME")}
+            onClick={() => props.changeOption("DEAN'S MESSAGE")}
             className={`${
-              props.currentOption === "HOME"
+              props.currentOption === "DEAN'S MESSAGE"
                 ? "bg-[#ed3237] border-[#ed3237]"
                 : "bg-[#006cb5] border-[#ed3237]"
             } text-sm border-[3px] text-white py-1 px-2 rounded w-[100%] h-[50px] hover:scale-105 hover:bg-[#ed3237] transition-all`}
           >
-            Home
+            Dean's Message
           </button>
         </div>
         <div className="flex  w-[45%] before:bg-[#ed3237] ">

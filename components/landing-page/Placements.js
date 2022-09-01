@@ -35,7 +35,7 @@ export default function Placements(props) {
             </div>
           </span>
           <span className="mt-[20px]">
-            <div className="flex flex-wrap justify-between w-[100%]">
+            <div className="flex flex-wrap w-[100%] justify-center md:justify-between ">
               <img
                 src="/static/images/company-logos/Air-India-logo.jpg"
                 className="w-[200px] h-[auto] max-h-[100px] mt-[10px]"
