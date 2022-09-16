@@ -5,6 +5,7 @@ const APIENDPOINTS = {
   getAllAnnouncements: baseUrl + "announcement",
   getAllFaculty: baseUrl + "faculty",
   getAllAchievements: baseUrl + "achievement",
+  getAllEvents: baseUrl + "events",
 };
 
 function getAllAnnouncementsApi() {
@@ -64,4 +65,28 @@ function getAllAchievementsApi() {
   });
 }
 
-export default { getAllAnnouncementsApi, getAllFaculty, getAllAchievementsApi };
+function getAllEvents() {
+  return new Promise((resolve, reject) => {
+    axios
+      .get(APIENDPOINTS.getAllEvents)
+      .then(function (response) {
+        // handle success
+        //console.log(response);
+        resolve(response.data.data);
+      })
+      .catch(function (error) {
+        // handle error
+        //console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  });
+}
+
+export default {
+  getAllAnnouncementsApi,
+  getAllFaculty,
+  getAllAchievementsApi,
+  getAllEvents,
+};

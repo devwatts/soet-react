@@ -28,6 +28,7 @@ export default function Home() {
   const { push } = useRouter();
   const [AchievementsData, setAchievementsData] = useState([]);
   const [AnnouncementData, setAnnouncementData] = useState([]);
+  const [EventData, setEventData] = useState([]);
 
   useEffect(() => {
     async function setAnnouncements() {
@@ -42,6 +43,12 @@ export default function Home() {
       });
     }
     setAchievements();
+    async function setEvents() {
+      await API.getAllEvents().then((resp) => {
+        setEventData(resp);
+      });
+    }
+    setEvents();
   }, []);
 
   return (
@@ -108,7 +115,7 @@ export default function Home() {
           <HalfCard data={AchievementsData} title={"Achievements"}></HalfCard>
         </div>
         <div className="flex justify-around w-100">
-          <FullCard width={"90%"}></FullCard>
+          <FullCard data={EventData} width={"90%"}></FullCard>
         </div>
       </div>
       <Footer></Footer>
