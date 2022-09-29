@@ -9,6 +9,7 @@ const FullCard = (props) => {
       </div>
       <div className="flex w-[100%] justify-around flex-wrap">
         {props.data.map((value, key) => {
+          // console.log(value);
           return <CardRowTwo data={value}></CardRowTwo>;
         })}
       </div>
