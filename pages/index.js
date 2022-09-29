@@ -42,6 +42,7 @@ export default function Home() {
         setAchievementsData(resp);
       });
     }
+    setAchievements();
     setEvents();
     async function setEvents() {
       await API.getAllEvents().then((resp) => {
