@@ -5,7 +5,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import CardRowTwo from "../../components/landing-page/cards/cardRowTwo";
 import Footer from "../../components/layout/footer";
 import SideBar from "../../components/layout/sideBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import API from "../../utils/apis";
 
 const images = [
   {
@@ -26,6 +27,20 @@ const images = [
 
 export default function Events() {
   const [sideBar, setSideBar] = useState(false);
+  const [eventData, setEventData] = useState([]);
+  useEffect(() => {
+    async function setEvents() {
+      await API.getAllEvents().then((resp) => {
+        const sortedEvents = resp.sort(function (a, b) {
+          return new Date(a.event_end_date) - new Date(b.event_end_date);
+        });
+        setEventData(sortedEvents);
+      });
+    }
+    setEvents();
+  }, []);
+
+  console.log(eventData);
 
   return (
     <div>
@@ -57,17 +72,19 @@ export default function Events() {
                   id="type"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
-                  <option selected="">Event Type</option>
-                  <option value="">Upcoming Events</option>
+                  <option selected value="">
+                    Upcoming Events
+                  </option>
                   <option value="">Past Events</option>
                 </select>
               </div>
             </div>
             <div className="flex w-[100%] justify-around flex-wrap">
-              <CardRowTwo></CardRowTwo>
-              <CardRowTwo></CardRowTwo>
-              <CardRowTwo></CardRowTwo>
-              <CardRowTwo></CardRowTwo>
+              {eventData.map((value, key) => {
+                if (value) {
+                  return <CardRowTwo data={value}></CardRowTwo>;
+                }
+              })}
             </div>
           </div>
         </div>

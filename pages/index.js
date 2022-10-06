@@ -12,6 +12,7 @@ import FacultyInfo from "../components/landing-page/faculty";
 import ResearchDevelopment from "../components/landing-page/ResearchDevelopment";
 import VisionMission from "../components/landing-page/VisionMission";
 import Alumni from "../components/landing-page/Alumni";
+import Emagazine from "../components/landing-page/Emagazine";
 import Footer from "../components/layout/footer";
 import SideBar from "../components/layout/sideBar";
 import { useState, useEffect } from "react";
@@ -110,6 +111,7 @@ export default function Home() {
           ></ResearchDevelopment>
           <VisionMission currentOption={navigationOption}></VisionMission>
           <Alumni currentOption={navigationOption}></Alumni>
+          <Emagazine currentOption={navigationOption}></Emagazine>
         </div>
         <div className="flex flex-col w-[100%] h-fit justify-around items-center mt-[50px] mb-[50px] lg:flex-row">
           <HalfCard data={AnnouncementData} title={"Announcements"}></HalfCard>

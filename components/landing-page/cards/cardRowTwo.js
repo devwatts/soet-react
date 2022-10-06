@@ -6,8 +6,8 @@ const CardRowTwo = (props) => {
     setCardData(props.data);
   }, []);
 
-  const splitDescription = cardData
-    ? cardData.event_desc?.substring(0, 250)
+  const splitDescription = cardData.event_desc
+    ? cardData.event_desc[0]?.substring(0, 250)
     : "";
   return (
     <div className="flex flex-col w-[90%] bg-[#ffffff] mt-[30px] p-[15px] items-center rounded-[10px] lg:flex-row md:w-[45%]">
@@ -16,9 +16,12 @@ const CardRowTwo = (props) => {
       </div>
       <div className="flex flex-col text-[16px] ml-[20px]">
         <span className="font-bold text-[19px]">{cardData?.event_name}</span>
-        <span className="italic text-[14px]">{cardData?.event_date}</span>
+        <span className="italic text-[14px]">{cardData?.event_end_date}</span>
         <span className="text-[16px]">
-          {splitDescription} <a href="#">more ...</a>
+          {splitDescription}{" "}
+          <a onClick={() => alert("In development")} href="#">
+            more ...
+          </a>
         </span>
       </div>
     </div>
