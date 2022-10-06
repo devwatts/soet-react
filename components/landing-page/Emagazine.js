@@ -18,13 +18,13 @@ export default function Emagazine(props) {
           </span>
           <span className="text-[16px] flex flex-col">
             <button
-              onClick={() => push("")}
+              onClick={() => push("https://krmangalameduin-my.sharepoint.com/:b:/g/personal/1901010026_krmu_edu_in/ESJ59RCIFzNAgSFUqEW85foBEprS3sr4KG85bkUr2fG33g?e=EMYpA9")}
               className="bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] w-[fit-content] hover:tracking-[1px] m-5"
             >
               Prism (JAN - MARCH 2022)
             </button>
             <button
-              onClick={() => push("")}
+              onClick={() => push("https://krmangalameduin-my.sharepoint.com/:b:/g/personal/1901010026_krmu_edu_in/ETnljUbkblBCsMosOittPoEB2WpaM_N5a5w1CnLz_FoSxg?e=h2qgrX")}
               className="bg-[#ed3237] text-white p-[15px] transition-all t-[16px] rounded-[100px] w-[fit-content] hover:tracking-[1px] m-5"
             >
               Prism (APRIL - MAY 2022)
